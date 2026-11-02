@@ -50,6 +50,10 @@ resource "docker_volume" "grafana_data" {
     label = "component"
     value = "monitoring"
   }
+  labels {
+    label = "managed-by"
+    value = "terraform"
+  }
 }
 
 resource "docker_volume" "prometheus_data" {
@@ -67,5 +71,9 @@ resource "docker_volume" "prometheus_data" {
   labels {
     label = "component"
     value = "monitoring"
+  }
+  labels {
+    label = "managed-by"
+    value = "terraform"
   }
 }
