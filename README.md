@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # TP11 — Infraestructura como Código con Terraform
 
 ## Recursos creados
@@ -43,5 +42,3 @@ modules/
 ├── storage/   → volúmenes persistentes con labels
 └── app/       → contenedores con healthchecks y dependencias
 =======
-# devops-TP11
->>>>>>> parent of 952f0cd (commit inicial)
