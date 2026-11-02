@@ -15,7 +15,7 @@ terraform {
 # ── Imágenes (pull desde registry) ───────────────────────
 resource "docker_image" "postgres" {
   name         = var.postgres_image
-  keep_locally = true    # no borrar la imagen al destroy
+  keep_locally = true # no borrar la imagen al destroy
 }
 
 resource "docker_image" "backend" {
@@ -50,7 +50,7 @@ resource "docker_container" "postgres" {
   # Conectar a la red de la app
   networks_advanced {
     name    = var.app_network_name
-    aliases = ["postgres"]    # hostname dentro de la red
+    aliases = ["postgres"] # hostname dentro de la red
   }
 
   # Healthcheck interno
