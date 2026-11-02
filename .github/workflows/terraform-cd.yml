@@ -24,7 +24,6 @@ jobs:
         uses: hashicorp/setup-terraform@v3
         with:
           terraform_version: "1.7.5"
-          terraform_wrapper: false
 
       - name: 3. Inicializar Proveedor y Backend
         run: terraform init
